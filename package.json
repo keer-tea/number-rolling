@@ -6,6 +6,7 @@
   "homepage": "https://github.com/long-life233/number-rolling",
   "repository": "https://github.com/long-life233/number-rolling",
   "keywords": [
+    "number-rolling",
     "number-roll",
     "number-filp",
     "count-to-number"
@@ -15,8 +16,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/number-rolling.umd.cjs",
+  "module": "./dist/number-rolling.js",
   "exports": {
     ".": {
       "import": "./dist/my-lib.js",

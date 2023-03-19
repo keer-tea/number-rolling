@@ -1,6 +1,5 @@
 {
   "name": "number-rolling",
-  "private": true,
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },

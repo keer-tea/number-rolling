@@ -1,6 +1,6 @@
 {
   "name": "number-rolling",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "用原生 js 实现的数字滚动插件",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
@@ -28,7 +28,7 @@
       "require": "./dist/my-lib.umd.cjs"
     }
   },
-   "author": {
+  "author": {
     "name": "LuxCurl",
     "url": "https://github.com/long-life233"
   },

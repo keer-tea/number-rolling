@@ -38,8 +38,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "build": "vue-tsc && vite build"
   },
   "devDependencies": {
     "@types/node": "^18.15.3",

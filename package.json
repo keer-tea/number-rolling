@@ -1,6 +1,6 @@
 {
   "name": "number-rolling",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "用原生 js 实现的数字滚动插件",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"

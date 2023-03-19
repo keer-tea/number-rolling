@@ -9,10 +9,10 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/lib/number-roll.ts'),
-      name: 'number-roll',
+      entry: resolve(__dirname, 'src/lib/number-rolling.ts'),
+      name: 'number-rolling',
       // the proper extensions will be added
-      fileName: 'number-roll',
+      fileName: 'number-rolling',
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

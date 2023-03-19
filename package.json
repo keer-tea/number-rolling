@@ -1,6 +1,6 @@
 {
   "name": "number-rolling",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "用原生 js 实现的数字滚动插件",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
@@ -18,14 +18,14 @@
   ],
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
-  "main": "./dist/number-rolling.umd.cjs",
   "module": "./dist/number-rolling.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/number-rolling.js",
+      "require": "./dist/number-rolling.umd.js"
     }
   },
   "author": {

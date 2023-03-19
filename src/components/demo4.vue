@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watchEffect, onMounted } from 'vue';
-import {Roll} from '../lib/number-roll'
+import {Roll} from '../lib/number-rolling'
 import buttonVue from './button.vue'
 const $ = s => document.querySelector(s)
 

@@ -12,7 +12,7 @@ interface RollOptions {
   delay?: number,
   letterMargin?: number
 }
-export declare class Flip {
+export declare class Roll {
   private node: HTMLElement;
   // 最大位数就是根据这个 from 来定的
   from: number;

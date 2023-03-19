@@ -24,7 +24,13 @@
       "require": "./dist/my-lib.umd.cjs"
     }
   },
-  "author": "LuxCurl",
+   "author": {
+    "name": "LuxCurl",
+    "url": "https://github.com/long-life233"
+  },
+  "bugs": {
+    "url": "https://github.com/long-life233/number-rolling/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",

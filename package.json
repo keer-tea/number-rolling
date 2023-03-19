@@ -1,5 +1,7 @@
 {
   "name": "number-rolling",
+  "version": "1.0.3",
+  "description": "用原生 js 实现的数字滚动插件",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
@@ -9,9 +11,8 @@
     "number-rolling",
     "number-roll",
     "number-filp",
-    "count-to-number"
+    "countup-to"
   ],
-  "version": "1.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -28,6 +29,7 @@
     "name": "LuxCurl",
     "url": "https://github.com/long-life233"
   },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/long-life233/number-rolling/issues"
   },

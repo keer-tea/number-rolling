@@ -10,7 +10,8 @@ export default defineConfig(({command, mode}) => {
       plugins: [vue()],
       build: {
         outDir: 'docs'
-      }
+      },
+      base: '/number-rolling/'
     }
   } else if (mode === 'lib') {
     return {

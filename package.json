@@ -5,10 +5,10 @@
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
-  "homepage": "https://github.com/long-life233/number-rolling",
+  "homepage": "https://github.com/keer-tea/number-rolling",
   "repository": {
     "type": "git",
-    "url": "https://github.com/long-life233/number-rolling"
+    "url": "https://github.com/keer-tea/number-rolling"
   },
   "keywords": [
     "number-rolling",
@@ -31,15 +31,18 @@
   },
   "author": {
     "name": "LuxCurl",
-    "url": "https://github.com/long-life233"
+    "url": "https://github.com/keer-tea"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/long-life233/number-rolling/issues"
+    "url": "https://github.com/keer-tea/number-rolling/issues"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build"
+    "dev": "vite --mode example",
+    "preview": "vite preview --mode example --outDir doc",
+    "build": "npm run build:lib & npm run build:example",
+    "build:lib": "vue-tsc && vite build --mode lib",
+    "build:example": "vue-tsc && vite build --mode example"
   },
   "devDependencies": {
     "@types/node": "^18.15.3",

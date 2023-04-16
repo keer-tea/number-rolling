@@ -4,12 +4,12 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig(({command, mode}) => {
-  console.log(command, mode,'xasdf');
+  console.log(command, mode,'');
   if (mode === 'example') {
     return {
       plugins: [vue()],
       build: {
-        outDir: 'doc'
+        outDir: 'docs'
       }
     }
   } else if (mode === 'lib') {

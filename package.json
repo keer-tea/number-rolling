@@ -39,7 +39,7 @@
   },
   "scripts": {
     "dev": "vite --mode example",
-    "preview": "vite preview --mode example --outDir doc",
+    "preview": "vite preview --mode example --outDir docs",
     "build": "npm run build:lib & npm run build:example",
     "build:lib": "vue-tsc && vite build --mode lib",
     "build:example": "vue-tsc && vite build --mode example"

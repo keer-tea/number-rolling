@@ -1,24 +1,18 @@
-# name: Create Release Tag
+name: Publish Package to npmjs
 
-# on:
-#   push:
-#     tags:
-#       - 'v*'
-
-# jobs:
-#   release-tag:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@master
-
-#       - name: Create Release Tag
-#         id: release_tag
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.MY_COURSE_TOKEN }}
-#         with:
-#           tag_name: ${{ github.ref }}
-#           body: |
-#             详细更新日志请参考 [CHANGELOG.md](https://github.com/FightingDesign/fighting-design/blob/master/CHANGELOG.md)。
-
-#             Please refer to [CHANGELOG.en-US.md](https://github.com/FightingDesign/fighting-design/blob/master/CHANGELOG.en-US.md) for details.
+on:
+  push:
+    branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
